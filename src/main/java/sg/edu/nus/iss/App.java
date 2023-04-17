@@ -88,6 +88,40 @@ public class App
             System.out.println("you are an adult");
         }
 
+        //Slide 21 (While loop)
+        Integer i = 0;
+        input = con.readLine("Type a phrase: ");
+
+        while (i < input.length()){
+            //do or process something here
+            //e.g. Clementi --> BeginIndex = 0, C EndIndex = 0 C
+            //BeginIndex = 0, C EndIndex = will increase based on 'i'
+            //substring(beginIndex, endIndex)
+            System.out.println(input.substring(0, 0));
+
+            //i = i + 1 --> i++
+            //i = i - 1 --> i--
+            i++; 
+        }
+
+        for (int idx = 0; idx <= input.length(); idx= idx + 1){
+             System.out.println(input.substring(0, 0));
+        }
+
+        //Slide 23 (for loop)
+        String[] todo = new String[5];
+
+        for (int pos = 0; pos < todo.length; pos++){
+            input = con.readLine("Enter Todo task " + (pos + 1) + ": ");
+            todo[pos] = input;
+
+        }
+
+        for (int pos = 0; pos < todo.length; pos++) {
+            System.out.println("Task" + (pos + 1) + "--> " + todo [pos]);
+        }
+
+
 
     }
 }
