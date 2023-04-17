@@ -67,7 +67,25 @@ public class App
             default:
             System.out.println("Seems like you are a boring person without hobby");
             break;
+        }
 
+        
+        //Slide 19 
+        Integer myAge = 0;
+        String inputAge = con.readLine("What is your age?");
+
+        myAge = Integer.parseInt(inputAge);
+
+        if (myAge >= 0 && myAge <= 2){
+            System.out.println("you are a baby");
+        } else if (myAge > 2 && myAge <=4){
+            System.out.println("you are a toddler");
+        } else if (myAge > 4 && myAge <= 12){
+            System.out.println("you are a child");
+        } else if (myAge > 12 && myAge < 19){
+            System.out.println("you are a teen");
+        } else {
+            System.out.println("you are an adult");
         }
 
 
